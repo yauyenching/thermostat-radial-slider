@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React, { Component } from 'react'
+import { ReactComponent as BGFace } from './assets/ThermostatBG.min.svg';
+import { ReactComponent as InnerFace } from './assets/InnerFace.min.svg';
+import { ReactComponent as SunIcon } from './assets/Sun.min.svg';
+import { ReactComponent as Pointer } from './assets/Pointer.min.svg';
+// import { ReactComponent as SliderMark } from './assets/SliderMark.min.svg';
+import RadialSliderMarksTrack from './components/RadialSliderMarksTrack';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Face">
+      {/* <SliderMark className="SliderMark"/> */}
+      <RadialSliderMarksTrack className="RadialSliderMarksTrack"/>
+      <BGFace className="BGFace"/>
+      <InnerFace className="InnerFace"/>
+      <SunIcon className="SunIcon"/>
+      <div className="TemperatureGauges">
+        <div className="TargetTemperature">72</div>
+        <div className="TargetTemperature" style={{fontSize: 72}}>.0</div>
+        <div className="CurrentTemperature">Current: 72</div>
+      </div>
+      <Pointer className="Pointer"/>
     </div>
   );
 }

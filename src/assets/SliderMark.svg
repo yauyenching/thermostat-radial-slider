@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="SliderMark.svg"
+   id="svg18"
+   version="1.1"
+   width="5.0768886"
+   height="53.342987">
+  <metadata
+     id="metadata22">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     inkscape:current-layer="layer4"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-9"
+     inkscape:window-x="-9"
+     inkscape:cy="26.613949"
+     inkscape:cx="28.802716"
+     inkscape:zoom="11.866666"
+     showgrid="false"
+     id="namedview20"
+     inkscape:window-height="1051"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     inkscape:document-rotation="0"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="true"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="2.5384443,-178.31541"
+       orientation="0,-1"
+       id="guide857" />
+    <sodipodi:guide
+       id="guide1489"
+       orientation="1,0"
+       position="2.5384443,-178.31541" />
+    <sodipodi:guide
+       id="guide1499"
+       orientation="0,-1"
+       position="2.5384443,66.572233" />
+    <sodipodi:guide
+       id="guide1501"
+       orientation="0,-1"
+       position="2.5384443,53.931783" />
+  </sodipodi:namedview>
+  <defs
+     id="defs8">
+    <linearGradient
+       y2="45"
+       x2="555"
+       y1="45"
+       x1="45"
+       id="grad"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         id="stop2"
+         style="stop-color:#4985fc;stop-opacity:1"
+         offset="0%" />
+      <stop
+         id="stop4"
+         style="stop-color:#f82c3d;stop-opacity:1"
+         offset="100%" />
+    </linearGradient>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter1382">
+      <feFlood
+         flood-opacity="0.097116843702579669"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1372" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1374" />
+      <feGaussianBlur
+         stdDeviation="6"
+         result="blur"
+         id="feGaussianBlur1376" />
+      <feOffset
+         dx="0"
+         dy="7.48503"
+         result="offset"
+         id="feOffset1378" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1380" />
+    </filter>
+  </defs>
+  <g
+     transform="translate(-297.46156,-68.341606)"
+     inkscape:label="stroke"
+     id="layer4"
+     inkscape:groupmode="layer">
+    <ellipse
+       style="fill:#c3c4c5;fill-opacity:1;stroke:none;stroke-width:1.13351;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path2073"
+       cx="300"
+       cy="95.0131"
+       rx="2.5384443"
+       ry="26.671494" />
+  </g>
+</svg>

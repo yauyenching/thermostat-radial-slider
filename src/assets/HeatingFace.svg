@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="HeatingFace.svg"
+   id="svg1434"
+   version="1.1"
+   width="596"
+   height="596">
+  <metadata
+     id="metadata1440">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1438" />
+  <sodipodi:namedview
+     fit-margin-bottom="52"
+     fit-margin-right="52"
+     fit-margin-left="52"
+     fit-margin-top="52"
+     lock-margins="true"
+     inkscape:current-layer="svg1434"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="1912"
+     inkscape:cy="302"
+     inkscape:cx="302"
+     inkscape:zoom="1.4833333"
+     showgrid="false"
+     id="namedview1436"
+     inkscape:window-height="1057"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <g
+     transform="matrix(0.984,0,0,0.984,2.8,2.8)"
+     id="g2007">
+    <circle
+       cx="300"
+       cy="300"
+       r="250"
+       fill="#ff5866"
+       id="circle1426" />
+    <path
+       d="M 124,123 A 237.24544,268.87817 0 0 0 516,426"
+       fill="#ff4756"
+       id="path1428" />
+    <path
+       d="M 124,123 A 249.60869,249.60869 0 0 0 477,476"
+       fill="#ff4756"
+       id="path1430" />
+    <path
+       d="m 124,123 c 1,102 176,252 392,303 z"
+       fill="#ff5866"
+       id="path1432" />
+  </g>
+</svg>
