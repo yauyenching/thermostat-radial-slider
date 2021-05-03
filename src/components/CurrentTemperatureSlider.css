@@ -1,0 +1,73 @@
+.CurrentTemperatureSlider {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 535px;
+  height: 50px;
+  background-color: #FFFFFF;
+  margin: 20px auto;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #555555;
+  font-style: normal;
+  font-weight: normal;
+  /* line-height: 19px; */
+  padding: 0px;
+  border-radius: 5px; 
+  letter-spacing: 0.1px;
+}
+
+#CurrTempInput {
+  /* display: inline-block; */
+  margin: 0px auto;
+  padding: 12.5px 0px;
+  /* padding: 12.5px 0px; */
+  width: 465px;
+  height: 25px; 
+}
+
+#TempNum {
+  width: 45px;
+  height: 20px;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #555555;
+  margin: 0px 13px 0px 6px;
+}
+
+.TempRange {
+  width: 215px;
+  height: 2px;
+  -webkit-appearance: none;
+  border-radius: 5px;  
+  background: #CACACA;
+  outline: none;
+}
+
+.TempRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border-style: solid;
+  border-color: #999999;
+  border-width: 2px;
+  cursor: pointer;
+}
+
+.TempRange::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border-style: solid;
+  border-color: #999999;
+  border-width: 2px;
+  cursor: pointer;
+}
+
+.TempRange::-moz-range-progress {
+  background-color: #999999; 
+}
