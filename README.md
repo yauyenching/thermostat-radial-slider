@@ -39,7 +39,7 @@ Debugging slider so that we can test out the application by manipulating the `cu
 This component collects the business and UI logic from a myriad of components and then layers them for rendering on the DOM.
 
 ### ThermostatModel
-This is where the actual data for `currentTemperature`, `targetTemperature`, and `mode` of the thermostat resides. Changes which happen because of user input are propagated to functions which handle user input from this custom hook. This is also where the XState state machine resides, which is intended to facilitate the mode checking and changing of the thermostat.
+This is where the actual data for `currentTemperature`, `targetTemperature`, and `mode` of the thermostat resides. Changes which happen because of user input are propagated to functions from this file. This is also where the XState state machine resides, which is intended to facilitate the mode checking and changing of the thermostat.
 
 ### AngleOffset
 This is where functions for calculating the translation and rotation offset for positioning the radial slider thumb and marks go.
