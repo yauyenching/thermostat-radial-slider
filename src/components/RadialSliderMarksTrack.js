@@ -27,7 +27,14 @@ function RadialSliderMarksTrack() {
             transform: `translate(${xOffset}px, ${yOffset}px) rotate(${rotationDeg}deg)`
         };
         // console.log(style);
-        return <SliderMark className="SliderMark" key={i} style={style} />;
+        return (
+            <SliderMark
+                className="SliderMark"
+                key={i}
+                style={style}
+                // onClick={e => alert(e.pageX + ', ' + e.pageY)}
+            />
+        );
     }
 
     // Create track for all indexes

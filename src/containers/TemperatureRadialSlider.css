@@ -1,15 +1,15 @@
 .TemperatureRadialSlider {
   position: relative;
-  top:0px;
+  top: 0px;
   left: 0px;
   /* top: 100px;
   left: calc(50% - 600px/2); */
   width: 600px;
 }
 
-.Face {
+#Face {
   position: relative;
-  top:0px;
+  top: 0px;
   left: 0px;
   /* top: 100px;
   left: calc(50% - 600px/2); */

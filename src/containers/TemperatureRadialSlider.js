@@ -27,9 +27,17 @@ function TemperatureRadialSlider() {
     }
   }
 
+  // From https://stackoverflow.com/questions/56512018/finding-the-center-point-coordinates-of-svg
+  function getCenter(svgElement) {
+    let { x, y, width, height } = svgElement.getBoundingClientRect();
+    let cx = width / 2 + x;
+    let cy = height / 2 + y;
+    return { cx: cx, cy: cy }
+  }
+
   return (
     <div className="TemperatureRadialSlider">
-      <div className="Face">
+      <div id="Face">
         {/* <SliderMark className="SliderMark"/> */}
         <RadialSliderMarksTrack className="RadialSliderMarksTrack" />
         <BGFace className="BGFace" />
@@ -40,7 +48,10 @@ function TemperatureRadialSlider() {
           targetTemp={targetTemp}
           targetTempDecimal={targetTempDecimal}
         />
-        <RadialSliderThumb />
+        <RadialSliderThumb 
+          cx={300}
+          cy={300}
+        />
       </div>
       <CurrentTemperatureSlider
         currTemp={currTemp}
