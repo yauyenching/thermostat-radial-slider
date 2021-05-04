@@ -73,6 +73,7 @@ const RadialSliderThumb = (props) => {
     }
   }
 
+  // Referenced https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event
   const onScroll = (e) => {
     e.preventDefault();
     const forward = (e.deltaY < 0) ? true : false;

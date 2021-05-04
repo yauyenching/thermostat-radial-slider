@@ -12,24 +12,18 @@ import TemperatureGauges from 'components/Face/TemperatureGauges';
 import CurrentTemperatureSlider from 'components/CurrentTemperatureSlider'
 import ThermostatModel from 'hooks/ThermostatModel';
 
-function Thermostat() {
-
-  // From https://stackoverflow.com/questions/56512018/finding-the-center-point-coordinates-of-svg
-  /* function getCenter(svgElement) {
-    let { x, y, width, height } = svgElement.getBoundingClientRect();
-    let cx = width / 2 + x;
-    let cy = height / 2 + y;
-    return { cx: cx, cy: cy }
-  } */
-
+const Thermostat = () => {
   const { mode, currTemp, targetTemp, targetTempDecimal, handleChangeCurrTemp, handleChangeTargetTemp } = ThermostatModel();
+
+  // Code to find center of page from https://stackoverflow.com/questions/1248081/how-to-get-the-browser-viewport-dimensions
+  const cx = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0) / 2
+  const cy = 30 + 600 / 2;
 
   return (
     <div className="TemperatureRadialSlider">
       <div id="Thermostat">
         <BGFace className="Face" />
-        {/* <InnerFace className="Face" /> */}
-        <ThermostatFace 
+        <ThermostatFace
           mode={mode}
         />
         <SunIcon className="SunIcon" />
@@ -39,9 +33,9 @@ function Thermostat() {
           targetTempDecimal={targetTempDecimal}
         />
         <RadialSliderMarksTrack className="RadialSliderMarksTrack" />
-        <RadialSliderThumb 
-          cx={300}
-          cy={300}
+        <RadialSliderThumb
+          cx={cx}
+          cy={cy}
           handleChangeTargetTemp={handleChangeTargetTemp}
         />
       </div>

@@ -57,57 +57,83 @@ const ThermostatModel = () => {
   /** ----------------------------------------------------------------
    *  Create XState mode machine
    */
+
+  // Inspiration: https://dev.to/codingdive/state-machine-advent-update-xstate-context-with-actions-1e9d
+  // Referenced https://github.com/davidkpiano/xstate#history-states
   const thermostatMachine = createMachine({
-    id: 'thermostat',
+    id: 'thermostatMode',
 
     context: {
       currTemp: currTemp,
       targetTemp: targetTemp
     },
 
-    initial: 'off',
+    initial: 'thermostat',
 
     states: {
       thermostat: {
-        off: {
-          on: {
-            isTooCold: {
-              target: 'heating',
-              action: ['turnOnCooler']
-            },
-            isTooHot: {
-              target: 'cooling',
-              action: ['turnOnHeater']
+        initial: 'off',
+        states: {
+          off: {
+            entry: ['checkComfort'],
+            on: {
+              isTooCold: {
+                target: 'heating',
+                action: ['turnOnCooler']
+              },
+              isTooHot: {
+                target: 'cooling',
+                action: ['turnOnHeater']
+              }
             }
-          }
-        },
-        heating: {
-          on: {
-            isHeated: {
-              target: 'off',
-              action: ['turnOffHeater']
+          },
+          heating: {
+            entry: ['checkHeated'],
+            on: {
+              isHeated: {
+                target: 'off',
+                action: ['turnOffHeater']
+              }
             }
-          }
-        },
-        cooling: {
-          on: {
-            isCooled: {
-              target: 'off',
-              action: ['turnOffCooler']
+          },
+          cooling: {
+            entry: ['checkCooled'],
+            on: {
+              isCooled: {
+                target: 'off',
+                action: ['turnOffCooler']
+              }
             }
-          }
+          },
+          hist: { type: 'history' }
         },
-        hist: { type: 'history' }
+        on: { input: 'tempChange' }
       },
       tempChange: {
         on: {
-          changeTargetTemp: 'thermostat.hist',
-          changeCurrentTemp: 'thermostat.hist'
+          changeTargetTemp: {
+            target: 'thermostat.hist',
+            actions: ['updateTargetTemp']
+          },
+          changeCurrentTemp: {
+            target: 'thermostat.hist',
+            actions: ['updateCurrTemp']
+          }
         }
       }
     },
 
     actions: {
+      checkComfort: (context, event) => {
+        if (isTooHot()) send('isTooHot');
+        else if (isTooCold()) send('isTooCold');
+      },
+      checkHeated: (context, event) => {
+        if (isHeated()) send('isHeated');
+      },
+      turnOnCooler: (context, event) => {
+        if (isCooled()) send('isCooled');
+      },
       turnOnHeater: (context, event) => {
         setMode('heating');
       },
@@ -119,22 +145,38 @@ const ThermostatModel = () => {
       },
       turnOffCooler: (context, event) => {
         setMode('off');
+      },
+      updateTargetTemp: (context, event) => {
+        const decimal = (context.targetTemp % 1 === 0) ? 0 : 5;
+        setTargetTemp(Math.floor(context.targetTemp));
+        setTargetTempDecimal(decimal);
+      },
+      updateCurrTemp: (context, event) => {
+        setCurrTemp(context.CurrTemp);
       }
     }
   });
 
-  const thermostatService = interpret(thermostatMachine)
+  /* const thermostatService = interpret(thermostatMachine)
     .onTransition((state) => console.log(state.value))
-    .start();
+    .start(); */
 
   /** ----------------------------------------------------------------
    *  Functions to handle change in current and target temperatures
    */
+  const [send] = useMachine(thermostatMachine);
+
+  // send is errored as not being a function so XState machine is currently unusable
+
   const handleChangeCurrTemp = (value) => {
     if (value >= 32 && value <= 100) {
       setCurrTemp(value);
       changeMode();
-      console.log(mode);
+      /* send({
+        type: 'changeCurrTemp',
+        currTemp: value
+      }) */
+      console.log(mode + ", currTemp: " + value);
     }
   }
 
@@ -146,7 +188,11 @@ const ThermostatModel = () => {
       // console.log("targetTemp: " + targetTemp);
       setTargetTempDecimal(decimal);
       changeMode();
-      console.log(mode);
+      /* send({
+        type: 'changeTargetTemp',
+        targetTemp: temp
+      }) */
+      console.log(mode + ", targetTemp: " + temp);
     }
   }
 

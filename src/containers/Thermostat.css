@@ -2,9 +2,10 @@
   position: relative;
   top: 0px;
   left: 0px;
-  /* top: 100px;
-  left: calc(50% - 600px/2); */
+  top: 30px;
+  left: calc(50% - 600px/2);
   width: 600px;
+  /* margin: 30px auto 0px; */
 }
 
 #Thermostat {

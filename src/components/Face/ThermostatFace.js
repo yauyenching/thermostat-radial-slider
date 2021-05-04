@@ -21,15 +21,15 @@ const ThermostatFace = (props) => {
       case 'off':
         heatMode = 'off';
         coolMode = 'off';
-        console.log('heatMode: ' + heatMode + ', coolMode: ' + coolMode);
+        // console.log('heatMode: ' + heatMode + ', coolMode: ' + coolMode);
         break;
       case 'cooling':
         coolMode = 'on';
-        console.log('heatMode: ' + heatMode + ', coolMode: ' + coolMode);
+        // console.log('heatMode: ' + heatMode + ', coolMode: ' + coolMode);
         break;
       case 'heating':
         heatMode = 'on';
-        console.log('heatMode: ' + heatMode + ', coolMode: ' + coolMode);
+        // console.log('heatMode: ' + heatMode + ', coolMode: ' + coolMode);
         break;
     }
   }
