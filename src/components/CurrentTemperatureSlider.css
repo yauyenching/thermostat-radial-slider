@@ -27,7 +27,7 @@
 }
 
 #TempNum {
-  width: 45px;
+  width: 58px;
   height: 20px;
   font-family: Roboto;
   font-size: 16px;
@@ -36,7 +36,7 @@
 }
 
 .TempRange {
-  width: 215px;
+  width: 202px;
   height: 2px;
   -webkit-appearance: none;
   border-radius: 5px;  

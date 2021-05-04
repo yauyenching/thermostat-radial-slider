@@ -1,13 +1,12 @@
-import { getByPlaceholderText } from '@testing-library/dom'
-import React, { Component } from 'react'
-import { ReactComponent as SliderMark } from '../assets/SliderMark.min.svg'
+import React from 'react'
+import { ReactComponent as SliderMark } from 'assets/SliderMark.min.svg'
 import './RadialSliderMarksTrack.css';
-import { getAngle, getX, getY } from '../utils/AngleOffset.js';
+import { getAngle, getX, getY } from 'utils/AngleOffset.js';
 
-function RadialSliderMarksTrack() {
-    /**
-     * Auxiliary functions to assist in calculating where to place graduation marks along the inner face from -150 deg to 150 deg.
-     */
+/**
+ * Auxiliary functions to assist in calculating where to place graduation marks along the inner face from -150 deg to 150 deg.
+ */
+const RadialSliderMarksTrack = () => {
     // Radius of circle of which marks will be drawn along the inner boundary
     // 492 is the diameter of the inner face
     // 8 is the distance of the slider mark from the edge of the inner face
@@ -18,7 +17,7 @@ function RadialSliderMarksTrack() {
      * Create graduation mark track
      */
     // Create and position graduation mark given index i
-    function createMark(i) {
+    const createMark = (i) => {
         const xOffset = getX(i, RADIUS);
         const yOffset = getY(i, RADIUS);
         const rotationDeg = getAngle(i);
@@ -38,7 +37,7 @@ function RadialSliderMarksTrack() {
     }
 
     // Create track for all indexes
-    function createTrack() {
+    const createTrack = () => {
         let track = [];
 
         for (let i = 0; i < 61; i++) {

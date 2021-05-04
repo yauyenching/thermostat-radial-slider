@@ -7,12 +7,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="HeatingFace.svg"
-   id="svg1434"
+   height="600"
+   width="600"
    version="1.1"
-   width="596"
-   height="596">
+   id="svg1434"
+   sodipodi:docname="HeatingFace.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
   <metadata
      id="metadata1440">
     <rdf:RDF>
@@ -28,50 +28,55 @@
   <defs
      id="defs1438" />
   <sodipodi:namedview
-     fit-margin-bottom="52"
-     fit-margin-right="52"
-     fit-margin-left="52"
-     fit-margin-top="52"
-     lock-margins="true"
-     inkscape:current-layer="svg1434"
-     inkscape:window-maximized="1"
-     inkscape:window-y="-8"
-     inkscape:window-x="1912"
-     inkscape:cy="302"
-     inkscape:cx="302"
-     inkscape:zoom="1.4833333"
-     showgrid="false"
-     id="namedview1436"
-     inkscape:window-height="1057"
-     inkscape:window-width="1920"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
      bordercolor="#666666"
-     pagecolor="#ffffff" />
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     id="namedview1436"
+     showgrid="false"
+     inkscape:zoom="0.52443752"
+     inkscape:cx="-80.025223"
+     inkscape:cy="-49.308262"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g2007"
+     lock-margins="true"
+     fit-margin-top="54"
+     fit-margin-left="54"
+     fit-margin-right="54"
+     fit-margin-bottom="54" />
   <g
-     transform="matrix(0.984,0,0,0.984,2.8,2.8)"
-     id="g2007">
+     id="g2007"
+     transform="matrix(0.984,0,0,0.984,4.8,4.8)">
     <circle
-       cx="300"
-       cy="300"
+       style="fill:#e34552;fill-opacity:1"
+       id="circle1426"
+       fill="#ff5866"
        r="250"
-       fill="#ff5866"
-       id="circle1426" />
+       cy="300"
+       cx="300" />
     <path
-       d="M 124,123 A 237.24544,268.87817 0 0 0 516,426"
+       style="fill:#db3845;fill-opacity:1"
+       id="path1428"
        fill="#ff4756"
-       id="path1428" />
+       d="M 124,123 A 237.24544,268.87817 0 0 0 516,426" />
     <path
-       d="M 124,123 A 249.60869,249.60869 0 0 0 477,476"
+       style="fill:#db3845;fill-opacity:1"
+       id="path1430"
        fill="#ff4756"
-       id="path1430" />
+       d="M 124,123 A 249.60869,249.60869 0 0 0 477,476" />
     <path
-       d="m 124,123 c 1,102 176,252 392,303 z"
+       style="fill:#e34552;fill-opacity:1"
+       id="path1432"
        fill="#ff5866"
-       id="path1432" />
+       d="m 124,123 c 1,102 176,252 392,303 z" />
   </g>
 </svg>

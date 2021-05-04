@@ -3,4 +3,5 @@
     position: absolute;
     left: calc(50% - 5.08px/2 - 0.46px);
     top: calc(50% - 53.34px/2 - 211.33px);
+    mix-blend-mode: hard-light;
   }

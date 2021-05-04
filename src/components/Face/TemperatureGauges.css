@@ -1,8 +1,8 @@
 .TemperatureGauges {
   position: absolute;
-  width: 280px;
+  width: 326px;
   height: 218px;
-  left: 160px;
+  left: 158px;
   top: 190px;
   text-align: center;
   z-index: 5;
@@ -21,7 +21,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 44px;
   letter-spacing: 1px;
   color: #FFFFFF;
   position: absolute;

@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './TemperatureGauges.css';
 
 function TemperatureGauges(props) {
-  const currTemp = props.currTemp;
+  const currTemp = Number(props.currTemp).toFixed(1);
   const targetTemp = props.targetTemp;
   const targetTempDecimal = props.targetTempDecimal;
 

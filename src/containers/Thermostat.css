@@ -7,7 +7,7 @@
   width: 600px;
 }
 
-#Face {
+#Thermostat {
   position: relative;
   top: 0px;
   left: 0px;
@@ -17,7 +17,7 @@
   height: 600px;
 }
 
-.BGFace, .InnerFace {
+.Face {
   top: 0;
   left: 0;
   position: absolute;
@@ -29,7 +29,8 @@
   height: 50px;
   left: 275px;
   top: 445px;
-  color: #ffffff;
+  /* color: #ffffff; */
+  mix-blend-mode: difference;
 }
 
 .RadialSliderMarksTrack {

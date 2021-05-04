@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import './App.css';
-import TemperatureRadialSlider from './containers/TemperatureRadialSlider'
+import Thermostat from './containers/Thermostat'
 
 function App() {
   return (
-    <TemperatureRadialSlider />
+    <Thermostat />
   );
 }
 
