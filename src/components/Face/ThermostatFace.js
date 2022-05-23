@@ -11,8 +11,6 @@ import { ReactComponent as HotFace } from 'assets/HeatingFace.min.svg';
 const ThermostatFace = (props) => {
   const mode = props.mode;
   console.log('ThermostatFace mode: ' + mode);
-  // const [heatMode, setHeatMode] = useState('off');
-  // const [coolMode, setCoolMode] = useState('off');
   let heatMode = 'off';
   let coolMode = 'off';
 
@@ -21,15 +19,12 @@ const ThermostatFace = (props) => {
       case 'off':
         heatMode = 'off';
         coolMode = 'off';
-        // console.log('heatMode: ' + heatMode + ', coolMode: ' + coolMode);
         break;
       case 'cooling':
         coolMode = 'on';
-        // console.log('heatMode: ' + heatMode + ', coolMode: ' + coolMode);
         break;
       case 'heating':
         heatMode = 'on';
-        // console.log('heatMode: ' + heatMode + ', coolMode: ' + coolMode);
         break;
     }
   }
