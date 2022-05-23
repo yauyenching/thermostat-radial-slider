@@ -12,6 +12,8 @@ import TemperatureGauges from 'components/Face/TemperatureGauges';
 import CurrentTemperatureSlider from 'components/CurrentTemperatureSlider'
 import ThermostatModel from 'hooks/ThermostatModel';
 
+// Absolute file path referenced from https://dev.to/mr_frontend/absolute-imports-in-create-react-app-3ge8
+
 const Thermostat = () => {
   const { mode, currTemp, targetTemp, targetTempDecimal, handleChangeCurrTemp, handleChangeTargetTemp } = ThermostatModel();
 

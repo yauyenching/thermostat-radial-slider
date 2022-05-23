@@ -1,4 +1,3 @@
-// Referenced from https://dev.to/mr_frontend/absolute-imports-in-create-react-app-3ge8
 {
   "compilerOptions": {
     "baseUrl": "./src"
