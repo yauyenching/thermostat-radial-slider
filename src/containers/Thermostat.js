@@ -8,6 +8,9 @@ import RadialSliderMarksTrack from 'components/RadialSlider/RadialSliderMarksTra
 import TemperatureGauges from 'components/Face/TemperatureGauges';
 import CurrentTemperatureSlider from 'components/CurrentTemperatureSlider'
 import ThermostatModel from 'hooks/ThermostatModel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 // Absolute file path referenced from https://dev.to/mr_frontend/absolute-imports-in-create-react-app-3ge8
 
@@ -42,6 +45,12 @@ const Thermostat = () => {
         currTemp={currTemp}
         handleChangeCurrTemp={handleChangeCurrTemp}
       />
+      <div align="center">
+        <h3>Built with ❤️ by Yau Yen Ching&nbsp;
+        <a href="https://github.com/yauyenching"><FontAwesomeIcon icon={faGithub}  color="black"/></a> 
+        <a href="https://www.linkedin.com/in/yau-yen-ching"><FontAwesomeIcon icon={faLinkedin} color="black"/></a> 
+        </h3>
+      </div>
     </div>
   )
 }
