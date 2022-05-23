@@ -85,14 +85,5 @@ This is where the actual data for `currentTemperature`, `targetTemperature`, and
 #### AngleOffset
 This is where functions for calculating the translation and rotation offset for positioning the radial slider thumb and marks go.
 
-## 💾 Data ##
-The conference bulletins are available [here](https://bandung60.wordpress.com/bandung-bulletin/). I digitized them manually using optical character recognition technology. My digitization output can be found [here](https://github.com/yauyenching/bandung-bulletins/tree/main/document_text).
-
-## 🚩 Known Issues ##
-* **The word cloud does not dynamically resize in the event of window resizing.** One should refresh the page to resize the word cloud.
-* **The output is not 100% accurate.** The PDFs were not of high quality, so mispelled words (e.g., "asianafrican") can be found.
-
-Currently, there are no plans to revisit these issues in the near future.
-
 ## 📝 License ##
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/yauyenching/thermostat-radial-slider/blob/master/LICENSE) file for details.
