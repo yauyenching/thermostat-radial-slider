@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/thermostat-radial-slider/static/css/main.c329a1e3.css",
+    "main.js": "/thermostat-radial-slider/static/js/main.e1917df3.js",
+    "static/js/787.266ef440.chunk.js": "/thermostat-radial-slider/static/js/787.266ef440.chunk.js",
+    "static/media/Sun.min.svg": "/thermostat-radial-slider/static/media/Sun.min.7c1e67a66cad7bfd2f60233d9423948b.svg",
+    "static/media/ThermostatBG.min.svg": "/thermostat-radial-slider/static/media/ThermostatBG.min.a46e101a80863ade3158ff5c963670ba.svg",
+    "index.html": "/thermostat-radial-slider/index.html",
+    "static/media/SliderThumb.min.svg": "/thermostat-radial-slider/static/media/SliderThumb.min.8f84b601cd0142636b03be2cc1c1aa9c.svg",
+    "static/media/CoolingFace.min.svg": "/thermostat-radial-slider/static/media/CoolingFace.min.90fe6bbcaf448a9208325763ad249b15.svg",
+    "static/media/HeatingFace.min.svg": "/thermostat-radial-slider/static/media/HeatingFace.min.a76ccb249ffff1ff975a913f4dda9d68.svg",
+    "static/media/InnerFace.min.svg": "/thermostat-radial-slider/static/media/InnerFace.min.6321d5a5d014ea8127ffafc86867e134.svg",
+    "static/media/SliderMark.min.svg": "/thermostat-radial-slider/static/media/SliderMark.min.089b03fdf6926cc6994461545596dc42.svg",
+    "main.c329a1e3.css.map": "/thermostat-radial-slider/static/css/main.c329a1e3.css.map",
+    "main.e1917df3.js.map": "/thermostat-radial-slider/static/js/main.e1917df3.js.map",
+    "787.266ef440.chunk.js.map": "/thermostat-radial-slider/static/js/787.266ef440.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c329a1e3.css",
+    "static/js/main.e1917df3.js"
+  ]
+}
