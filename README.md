@@ -14,7 +14,7 @@ Target Temperature: <i>T<sub>t</sub></i>, Current Temperature: <i>T<sub>c</sub><
 | <i>T<sub>t</sub></i> < <i>T<sub>c</sub></i><br>| Cooling | Blue |
 </div>
 
-The user sets the target temperature by either dragging the slider thumb on radial slider interface or by scrolling the mouse wheel. There is a debugging slider for the user to simulate different current room temperatures. This was built as part of an assignment for the module CS3249 User Interface Development at National University of Singapore.
+The user sets the target temperature by either dragging the slider thumb on radial slider interface or by scrolling the mouse wheel. There is a debugging slider for the user to simulate different current room temperatures. This was built as part of an assignment for a User Interface Development course.
 
 ## ✨ Preview ##
 <div align="center">
