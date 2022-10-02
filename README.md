@@ -1,7 +1,7 @@
 <h1 align="center">Thermostat Radial Slider</h1>
 <p align="center">
-  <a href = "https://reactjs.org"><img src="https://img.shields.io/badge/Made%20with-React-23425C?logo=react"></a>
-  <a href = "https://github.com/yauyenching/thermostat-radial-slider/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-informational"></a>
+  <a href = "https://reactjs.org"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"></a>
+  <a href = "https://github.com/yauyenching/thermostat-radial-slider/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-informational?style=for-the-badge"></a>
 </p>
 This is a custom UI component for a skeuomorphic smart thermostat user interface to control heating and cooling. The simplified behavior is as follows:
 <br><br>
